@@ -1,0 +1,19 @@
+{
+  "name": "moviemagic",
+  "version": "1.0.0",
+  "description": "This is an assignment given by Softuni from its 'JS Back-End' course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1"
+  }
+}
