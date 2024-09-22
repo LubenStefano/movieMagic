@@ -1,5 +1,6 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
+import router from './routes.js';
 
 const port = 5000
 
@@ -10,10 +11,8 @@ app.engine('hbs', handlebars.engine({
     }))
 app.set('view engine', 'hbs')
 
-app.get("/", (req, res)=>{
-    res.write("<h1> Works </h1>")
+app.use(express.static('public'))
 
-    res.end()
-})
+app.use(router)
 
 app.listen(port, ()=>{console.log("Server is listening on port: " + port)})
